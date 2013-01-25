@@ -1,0 +1,21 @@
+[submodule "external/vim/vim-pathogen"]
+	path = external/vim/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "external/vim/vim-flake8"]
+	path = external/vim/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "external/zsh/oh-my-zsh"]
+	path = external/zsh/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "external/vim/vim-colors-solarized"]
+	path = external/vim/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "external/vim/vim-markdown"]
+	path = external/vim/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "external/vim/vim-fugitive"]
+	path = external/vim/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "external/vim/supertab"]
+	path = external/vim/supertab
+	url = https://github.com/ervandew/supertab.git
