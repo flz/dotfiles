@@ -1,0 +1,5 @@
+alias pc="query-pr -qx -c ports|wc -l"
+alias hunt="query-pr -qx -c ports -r freebsd-ports-bugs -s open"
+alias mine="query-pr -qxr flz"
+
+export PATH=$PATH:/home/garga/bin
