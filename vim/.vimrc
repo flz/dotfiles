@@ -30,3 +30,5 @@ match ErrorMsg '\%>80v.\+'
 " I have a decent terminal emulator.
 colorscheme wolfpack
 
+" Remap mapleader to something more convenient.
+let mapleader = ","

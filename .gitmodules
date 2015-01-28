@@ -22,3 +22,6 @@
 [submodule "external/vim/wolfpack"]
 	path = external/vim/wolfpack
 	url = https://github.com/carlson-erik/wolfpack.git
+[submodule "external/vim/nerdcommenter"]
+	path = external/vim/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
