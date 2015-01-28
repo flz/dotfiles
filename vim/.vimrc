@@ -28,6 +28,5 @@ set ruler
 match ErrorMsg '\%>80v.\+'
 
 " I have a decent terminal emulator.
-set background=dark
-colorscheme solarized
+colorscheme wolfpack
 

@@ -19,3 +19,6 @@
 [submodule "external/vim/supertab"]
 	path = external/vim/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "external/vim/wolfpack"]
+	path = external/vim/wolfpack
+	url = https://github.com/carlson-erik/wolfpack.git
