@@ -25,3 +25,6 @@
 [submodule "external/vim/nerdcommenter"]
 	path = external/vim/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "external/vim/incsearch"]
+	path = external/vim/incsearch
+	url = https://github.com/haya14busa/incsearch.vim
