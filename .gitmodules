@@ -28,3 +28,12 @@
 [submodule "external/vim/incsearch"]
 	path = external/vim/incsearch
 	url = https://github.com/haya14busa/incsearch.vim
+[submodule "external/vim/vim-airline"]
+	path = external/vim/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "external/vim/syntastic"]
+	path = external/vim/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "external/vim/YouCompleteMe"]
+	path = external/vim/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

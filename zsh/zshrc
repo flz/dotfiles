@@ -36,4 +36,10 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 source $ZSH/oh-my-zsh.sh
 
+if [ -f /usr/lib/python2.6/site-packages/powerline_status-2.0-py2.6.egg/powerline/bindings/zsh/powerline.zsh ]; then
+    source /usr/lib/python2.6/site-packages/powerline_status-2.0-py2.6.egg/powerline/bindings/zsh/powerline.zsh
+elif [ -f /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]; then
+    source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
+
 # Customize to your needs...

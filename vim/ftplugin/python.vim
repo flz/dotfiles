@@ -7,4 +7,4 @@ setlocal smarttab
 setlocal expandtab
 
 " Call flake8 on each file write.
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
