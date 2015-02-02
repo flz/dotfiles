@@ -62,13 +62,7 @@ let g:syntastic_check_on_wq = 0
 map <Leader>n :lnext<cr>
 map <Leader>p :lprev<cr>
 
-" YouCompleteMe plugin config.
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_min_num_identifier_candidate_chars = 4
-let g:ycm_global_ycm_extra_conf = '/home/maxim/local/bin/.ycm_extra_conf.py'
-nnoremap <leader>y :YcmForceCompileAndDiagnostics<cr>
-nnoremap <leader>pg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>pd :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>pc :YcmCompleter GoToDeclaration<CR>"
-let g:ycm_error_symbol = 'x'
-let g:ycm_warning_symbol = '!'
+" Gvim config.
+if has("gui_running")
+    set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h12
+endif
