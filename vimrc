@@ -23,6 +23,7 @@ NeoBundle 'ludovicchabant/vim-lawrencium'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-notes'
+NeoBundle 'Shougo/neomru.vim'
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -31,6 +32,8 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
+
+NeoBundleLocal ~/.vim/bundle
 
 call neobundle#end()
 
@@ -115,17 +118,17 @@ let g:unite_prompt = '» '
 let g:unite_split_rule = 'botright'
 let g:unite_enable_start_insert = 1
 let g:unite_source_history_yank_enable = 1
+let g:unite_force_overwrite_statusline = 0
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
-nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <leader>t :<c-u>Unite -buffer-name=files file_rec/async:!<cr>
 nnoremap <leader>o :<c-u>Unite -buffer-name=outline outline<cr>
 nnoremap <leader>y :<c-u>Unite -buffer-name=yank history/yank<cr>
 nnoremap <leader>e :<c-u>Unite -buffer-name=buffer buffer<cr>
 nnoremap <leader>f :<c-u>Unite -auto-resize file_rec/async<cr>
-nnoremap <leader>ft :<c-u>Unite -auto-resize -default-action=tabopen file_rec/async<cr>
-nnoremap <leader>fs :<c-u>Unite -auto-resize -default-action=split file_rec/async<cr>
-nnoremap <leader>fv :<c-u>Unite -auto-resize -default-action=vsplit file_rec/async<cr>
+nnoremap <leader>ft :<c-u>Unite -auto-resize -default-action=tabopen file_rec/async:!<cr>
+nnoremap <leader>fs :<c-u>Unite -auto-resize -default-action=split file_rec/async:!<cr>
+nnoremap <leader>fv :<c-u>Unite -auto-resize -default-action=vsplit file_rec/async:!<cr>
 
 " Custom mappings for the unite buffer.
 autocmd FileType unite call s:unite_settings()
