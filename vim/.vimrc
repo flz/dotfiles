@@ -137,6 +137,9 @@ function! s:unite_settings()
   let b:SuperTabDisabled = 1
 endfunction
 
+" Use templates when available.
+autocmd! BufNewFile * silent! 0r ~/.vim/templates/template.%:e
+
 " Gvim config.
 if has("gui_running")
     set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h12
