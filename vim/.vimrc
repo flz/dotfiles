@@ -24,6 +24,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-notes'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'bling/vim-airline'
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -88,17 +89,17 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
-" Powerline plugin config.
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" Airline plugin config.
 set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme = "powerlineish"
 
 " Syntastic plugin config.
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs = 0
 map <leader>n :lnext<cr>
 map <leader>p :lprev<cr>
 
