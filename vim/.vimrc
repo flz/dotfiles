@@ -21,10 +21,11 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'terryma/vim-instant-markdown'
 NeoBundle 'ludovicchabant/vim-lawrencium'
 NeoBundle 'ervandew/supertab'
-NeoBundle 'xolox/vim-misc'
-NeoBundle 'xolox/vim-notes'
+" NeoBundle 'xolox/vim-misc'
+" NeoBundle 'xolox/vim-notes'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {

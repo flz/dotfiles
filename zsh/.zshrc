@@ -45,3 +45,4 @@ fi
 # Customize to your needs...
 
 export EDITOR=vim
+export PATH=$PATH:~/bin
