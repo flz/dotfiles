@@ -2,48 +2,51 @@ if has('vim_starting')
   if &compatible
     set nocompatible
   endif
-  set runtimepath+=~/dotfiles/external/vim/neobundle.vim/
+  set runtimepath+=~/dotfiles/external/vim/dein.vim/
 endif
 
-call neobundle#begin(expand('~/dotfiles/external/vim/untracked'))
+if dein#load_state('~/dotfiles/external/vim/untracked')
+  call dein#begin('~/dotfiles/external/vim/untracked')
 
-NeoBundleFetch 'Shougo/neobundle.vim'  " NeoBundle manages iteself.
+  call dein#add('~/dotfiles/external/vim/dein.vim')
+  call dein#add('Shougo/deoplete.nvim')
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
 
-" Load a bunch of plugins.
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/unite-outline'
-NeoBundle 'Shougo/vimfiler'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'haya14busa/incsearch.vim'
-NeoBundle 'carlson-erik/wolfpack'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 'terryma/vim-instant-markdown'
-NeoBundle 'ludovicchabant/vim-lawrencium'
-NeoBundle 'ervandew/supertab'
-" NeoBundle 'xolox/vim-misc'
-" NeoBundle 'xolox/vim-notes'
-NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'vim-airline/vim-airline-themes'
+  " Load a bunch of plugins.
+  call dein#add('Shougo/unite.vim')
+  call dein#add('Shougo/unite-outline')
+  call dein#add('Shougo/vimfiler')
+  call dein#add('scrooloose/nerdcommenter')
+  call dein#add('haya14busa/incsearch.vim')
+  call dein#add('carlson-erik/wolfpack')
+  call dein#add('scrooloose/syntastic')
+  call dein#add('tpope/vim-markdown')
+  call dein#add('terryma/vim-instant-markdown')
+  call dein#add('ludovicchabant/vim-lawrencium')
+  call dein#add('ervandew/supertab')
+  " call dein#add('xolox/vim-misc')
+  " call dein#add('xolox/vim-notes')
+  call dein#add('Shougo/neomru.vim')
+  call dein#add('bling/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
 
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
+  call dein#add('Shougo/vimproc.vim', {
+  \ 'build' : {
+  \     'mac' : 'make -f make_mac.mak',
+  \     'linux' : 'make',
+  \     'unix' : 'gmake',
+  \    },
+  \ })
 
-NeoBundleLocal ~/.vim/bundle
-
-call neobundle#end()
+  call dein#end()
+  call dein#save_state()
+endif
 
 " Use all the vim goodness.
 filetype plugin indent on
-
-" Install missing plugins at startup.
-NeoBundleCheck
 
 " System detection.
 if has("unix")

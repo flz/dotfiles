@@ -10,6 +10,6 @@
 [submodule "external/vim/YouCompleteMe"]
 	path = external/vim/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "external/vim/neobundle.vim"]
-	path = external/vim/neobundle.vim
-	url = https://github.com/Shougo/neobundle.vim
+[submodule "external/vim/dein.vim"]
+	path = external/vim/dein.vim
+	url = https://github.com/Shougo/dein.vim
